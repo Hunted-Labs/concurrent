@@ -1,8 +1,9 @@
 package concurrent_test
 
 import (
-	"github.com/modern-go/concurrent"
 	"testing"
+
+	"github.com/Hunted-Labs/concurrent"
 )
 
 func TestMap_Load(t *testing.T) {

@@ -4,7 +4,8 @@ import (
 	"context"
 	"fmt"
 	"time"
-	"github.com/modern-go/concurrent"
+
+	"github.com/Hunted-Labs/concurrent"
 )
 
 func ExampleUnboundedExecutor_Go() {
@@ -46,7 +47,7 @@ func ExampleUnboundedExecutor_Go_panic() {
 	executor.Go(willPanic)
 	time.Sleep(time.Second)
 	// output:
-	// github.com/modern-go/concurrent_test.willPanic
+	// github.com/Hunted-Labs/concurrent_test.willPanic
 }
 
 func willPanic(ctx context.Context) {
